@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Private Crypto ↔ PayPal exchange. Secure, manual, person-to-person transactions with real-time rates and clear terms.">
   <title>Terms of Service – Crypto ↔ PayPal</title>
   <style>
     :root {
@@ -23,7 +24,7 @@
 
     header {
       background-color: var(--card-color);
-      padding: 40px 20px;
+      padding: 40px 20px 20px;
       text-align: center;
       border-bottom: 1px solid #2a2d35;
     }
@@ -39,6 +40,26 @@
       color: var(--subtext);
     }
 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+      background-color: #1a1d24;
+      border-bottom: 1px solid #2a2d35;
+    }
+
+    nav a {
+      color: var(--subtext);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
     main {
       max-width: 800px;
       margin: 40px auto;
@@ -48,25 +69,34 @@
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     }
 
+    section {
+      margin-bottom: 40px;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    section:hover {
+      background-color: #252a34;
+    }
+
     h2 {
       color: var(--accent);
-      border-bottom: 1px solid #2f323a;
-      padding-bottom: 5px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+      font-size: 1.4rem;
     }
 
     p, li {
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.8;
+      font-size: 1rem;
     }
 
     ul, ol {
       padding-left: 20px;
       margin-top: 10px;
       margin-bottom: 20px;
-    }
-
-    section {
-      margin-bottom: 30px;
     }
 
     .footer {
@@ -84,6 +114,26 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .agree-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .agree-button button {
+      background-color: var(--accent);
+      color: white;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .agree-button button:hover {
+      background-color: #1565c0;
+    }
   </style>
 </head>
 <body>
@@ -91,13 +141,24 @@
     <h1>Terms of Service</h1>
     <p>Crypto ↔ PayPal Exchange – Private, Secure & Manual</p>
   </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#trust">Security</a>
+    <a href="#process">Process</a>
+    <a href="#rates">Rates</a>
+    <a href="#terms">Terms</a>
+    <a href="#prohibited">Prohibited</a>
+    <a href="#acceptance">Acceptance</a>
+  </nav>
+
   <main>
-    <section>
+    <section id="overview">
       <h2>1. Service Overview</h2>
       <p>This is a private, person-to-person exchange operated only by me. This is not a marketplace or P2P network — every trade is direct and manual.</p>
     </section>
 
-    <section>
+    <section id="trust">
       <h2>2. Trust & Security</h2>
       <ul>
         <li>Transactions are handled manually and with care.</li>
@@ -106,7 +167,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="process">
       <h2>3. Exchange Process</h2>
       <ol>
         <li>We agree on the exchange rate, amount, and currency pair.</li>
@@ -116,12 +177,12 @@
       </ol>
     </section>
 
-    <section>
+    <section id="rates">
       <h2>4. Rates & Fees</h2>
       <p>Rates are competitive and adjusted in real time. Any applicable PayPal or blockchain network fees will be discussed upfront before the transaction.</p>
     </section>
 
-    <section>
+    <section id="terms">
       <h2>5. Transaction Terms</h2>
       <ul>
         <li>Once the transaction is started and funds are received, it is considered final and non-refundable.</li>
@@ -130,18 +191,23 @@
       </ul>
     </section>
 
-    <section>
+    <section id="prohibited">
       <h2>6. Prohibited Behavior</h2>
       <p>Chargebacks, fraud, using stolen accounts/funds, or fake identities are strictly forbidden. If any such behavior is detected, you will be banned and reported.</p>
     </section>
 
-    <section>
+    <section id="acceptance">
       <h2>7. Acceptance</h2>
       <p>By interacting on this server and requesting a transaction, you automatically agree to all terms listed above.</p>
+
+      <div class="agree-button">
+        <button onclick="alert('Thanks for agreeing to the terms.')">I Agree</button>
+      </div>
     </section>
   </main>
+
   <div class="footer">
-    &copy; 2025 Private Crypto ↔ PayPal Exchange. All rights reserved.
+    &copy; 2025 Private Crypto ↔ PayPal Exchange. All rights reserved. | Contact via <a href="https://discord.gg/zRjX4EFSsn">Discord</a>
   </div>
 </body>
 </html>
